@@ -16,20 +16,19 @@ KLOR is a 36-42 key column-staggered split keyboard. It supports a per key RGB m
 Polydactyl is the default layout. If you choose one of the other layouts you can use the matching template in the default keymap.\
 If you choose Konrad or Saegewerk and plan on using LEDs you need to uncomment the appropiate lines in the `klor.c` file.
 
-
 ## AVR MCU
+
 **Sparkfun Pro Micro / Elite-C / Puchi-C**
 
 You'll need to setup a local build environment of QMK. [Here](https://docs.qmk.fm/) you can find the instructions.\
 Place the klor folder from this repository in the keyboards folder of your qmk installation.\
+After moving the folder, open `/klor/keymaps/default/keymap.c` and change the included/defined layout and keymap. \
 Than you can use this command to compile the firmware for the KLOR.
 
 `qmk compile -kb klor -km default`
 
-
-
-
 ## RP2040 MCU
+
 **Adafruit KB2040 / Sparkfun Pro Micro RP2040 / BastardKB Splinky / Boardsource Blok / Elite-Pi / Sea-Picro / key micro RP**
 
 Place the klor folder from this repository in the keyboards folder of your qmk installation.\
@@ -38,8 +37,8 @@ Than you can use this command to compile the RP2040 firmware for the KLOR.
 
 `qmk compile -kb klor/2040 -km default`
 
-
 ## TODO
+
 - Add VIA(L) support
 - Add custom LED animation
 - Add OLED animation
